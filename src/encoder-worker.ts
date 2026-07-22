@@ -1,4 +1,7 @@
 /// <reference lib="webworker" />
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 /**
  * Encoder worker — turns the rendered PCM into a WAV or MP3 file off the main
  * thread. WAV is hand-rolled and instant; MP3 goes through the pure-JS LAME

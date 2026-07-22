@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 /**
  * The signal chain, built identically for a realtime `AudioContext` (live mic)
  * and an `OfflineAudioContext` (a dropped file). Sharing one builder is what

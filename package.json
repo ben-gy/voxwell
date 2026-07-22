@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Change your voice in your browser — pitch, formant and effects, exported as a file. Nothing is uploaded.",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

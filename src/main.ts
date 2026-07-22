@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 /**
  * Voxwell — bootstraps the app, owns the state machine, wires events.
  * All heavy lifting lives in audio.ts / graph.ts / dsp/*.

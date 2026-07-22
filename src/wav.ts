@@ -1,3 +1,6 @@
+// SPDX-License-Identifier: AGPL-3.0-or-later
+// Copyright (C) 2026 Ben Richardson — https://benrichardson.dev
+// Additional terms under AGPL-3.0 section 7(b) apply; see ADDITIONAL-TERMS.md.
 /** Minimal 16-bit PCM WAV writer. Pure and unit-tested. */
 
 /** Convert float samples in [-1, 1] to clamped 16-bit little-endian PCM. */
