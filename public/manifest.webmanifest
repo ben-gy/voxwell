@@ -1,0 +1,17 @@
+{
+  "name": "Voxwell — voice changer in your browser",
+  "short_name": "Voxwell",
+  "description": "Change your voice in your browser — pitch, formants and effects, exported as WAV or MP3. Nothing is uploaded.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#08080d",
+  "theme_color": "#08080d",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

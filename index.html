@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#08080d" />
+    <meta
+      name="description"
+      content="Free online voice changer that runs entirely in your browser. Shift pitch and formants live from your microphone or an audio file — chipmunk, deep, robot, radio, monster — and export a WAV or MP3. Nothing is uploaded."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+    <meta property="og:title" content="Voxwell — voice changer in your browser" />
+    <meta
+      property="og:description"
+      content="Change your voice live with a phase vocoder running in your browser. Pitch and formants, chipmunk to monster, exported as WAV or MP3. No upload, no account."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://voxwell.benrichardson.dev/" />
+    <meta property="og:image" content="https://voxwell.benrichardson.dev/og.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Voxwell — voice changer in your browser" />
+    <meta
+      name="twitter:description"
+      content="Change your voice live with a phase vocoder running in your browser. Pitch and formants, chipmunk to monster, exported as WAV or MP3. No upload, no account."
+    />
+    <meta name="twitter:image" content="https://voxwell.benrichardson.dev/og.png" />
+
+    <!-- CSP: self only. The outbound calls are the Cloudflare Web Analytics beacon
+         and, if you press Send in the feedback form, feedback.benrichardson.dev. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self'; connect-src 'self' blob: data: https://cloudflareinsights.com https://feedback.benrichardson.dev; worker-src 'self' blob:; child-src 'self' blob:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'none';"
+    />
+
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Voxwell — voice changer in your browser</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Voxwell",
+        "description": "Free online voice changer that runs entirely in your browser. Shift pitch and formants live from your microphone or an audio file and export a WAV or MP3. Nothing is uploaded.",
+        "url": "https://voxwell.benrichardson.dev/",
+        "image": "https://voxwell.benrichardson.dev/og.png",
+        "applicationCategory": "MultimediaApplication",
+        "operatingSystem": "Web browser",
+        "browserRequirements": "Requires JavaScript and AudioWorklet",
+        "author": { "@type": "Person", "name": "Ben Richardson", "url": "https://benrichardson.dev" },
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+      }
+    </script>
+    <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "ba2bab2193ba42c1bea3d6714fcd0e28"}'></script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
