@@ -34,6 +34,7 @@ import {
   mimeForFormat,
 } from './format';
 import { initGlossary } from './glossary';
+import { isTypingTarget } from './keyboard';
 import { DEFAULT_PARAMS, PRESETS, findPreset, matchPreset } from './presets';
 import { Scope } from './scope';
 import { closeModal, initModals, isModalOpen, openModal, toast } from './ui';
@@ -569,10 +570,7 @@ function wireChrome(): void {
       return;
     }
     if (isModalOpen()) return;
-    const target = e.target as HTMLElement | null;
-    const typing =
-      target &&
-      (target.tagName === 'INPUT' || target.tagName === 'SELECT' || target.isContentEditable);
+    const typing = isTypingTarget(e.target);
 
     if (e.key === ' ' && !typing) {
       e.preventDefault();
