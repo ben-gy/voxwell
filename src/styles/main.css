@@ -144,6 +144,12 @@ a:hover { text-decoration: underline; }
 
 .switch { display: inline-flex; align-items: center; gap: 8px; font-size: 0.84rem; color: var(--text-secondary); cursor: pointer; }
 
+.monitor-note {
+  font-size: 0.8rem; line-height: 1.5; color: var(--text-secondary);
+  background: var(--bg-panel); border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md); padding: 10px 14px; margin: 0;
+}
+
 /* --------------------------------------------------------------- scope */
 .scope-wrap {
   position: relative; background: #05050a; border: 1px solid var(--border-default);
