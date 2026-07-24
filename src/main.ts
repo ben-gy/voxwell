@@ -24,7 +24,6 @@ import { buildChain, type VoiceChain } from './graph';
 import { RECORDER_PROCESSOR } from './dsp/constants';
 import { dominantFrequency, makeTone } from './dsp/analysis';
 import { categoryLogger, emit, mountEventDrawer } from './eventlog';
-import { mountFeedback } from './feedback';
 import {
   buildFilename,
   extForFormat,
@@ -502,7 +501,6 @@ function boot(): void {
   loadSettings();
   initModals();
   initGlossary();
-  mountFeedback();
 
   scope = new Scope(el<HTMLCanvasElement>('scope'));
 
