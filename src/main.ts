@@ -34,6 +34,7 @@ import {
 } from './format';
 import { initGlossary } from './glossary';
 import { isTypingTarget } from './keyboard';
+import { routesMonitoringToEarpiece } from './platform';
 import { DEFAULT_PARAMS, PRESETS, findPreset, matchPreset } from './presets';
 import { Scope } from './scope';
 import { closeModal, initModals, isModalOpen, openModal, toast } from './ui';
@@ -353,6 +354,11 @@ const APP_HTML = `
             <button type="button" class="btn btn-ghost btn-sm" id="change-source">Change source</button>
           </div>
         </div>
+        <p class="monitor-note" id="monitor-note" role="status" hidden>
+          On iPhone, live monitoring plays through the earpiece at the top of the phone —
+          that's how iOS handles a live microphone, not a fault. Hold it to your ear like a
+          call, or plug in headphones for the best sound (and no feedback howl).
+        </p>
 
         <div class="scope-wrap">
           <canvas class="scope" id="scope" aria-label="Audio waveform"></canvas>
@@ -774,6 +780,10 @@ function enterStudio(): void {
 
   el<HTMLElement>('src-name').textContent = state.sourceName;
   show(el<HTMLElement>('monitor-wrap'), state.sourceKind === 'mic');
+  show(
+    el<HTMLElement>('monitor-note'),
+    state.sourceKind === 'mic' && routesMonitoringToEarpiece(navigator.userAgent),
+  );
   show(el<HTMLButtonElement>('record-btn'), state.sourceKind === 'mic');
   show(el<HTMLElement>('meter'), state.sourceKind === 'mic');
 
